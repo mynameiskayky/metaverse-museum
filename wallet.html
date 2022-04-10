@@ -1,0 +1,56 @@
+<head>
+  <link
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body class="h-full bg-gray-900">
+  <div
+    class="flex w-full mt-40 mb-10 justify-center content-center items-center space-x-4"
+  >
+    <div class="flex flex-col space-y-6">
+      <h3 class="text-center text-white">Exchange NFTs</h3>
+      <div class="flex flex-col space-y-2">
+        <button
+          onclick="loginWithEth()"
+          class="rounded bg-white border border-gray-400 hover:bg-gray-100 py-2 px-4 text-gray-600 hover:text-gray-700"
+        >
+          Login & Save ETH Address
+        </button>
+        <p id="userAddress" class="text-gray-600 text-center"></p>
+        <button
+          id="logoutButton"
+          onclick="logout()"
+          class="hidden text-blue-500 underline"
+        >
+          Logout
+        </button>
+      </div>
+      <div class="flex gap-4">
+        <button
+          onclick="getOpenseaItems()"
+          class="rounded bg-blue-500 hover:bg-blue-700 py-2 px-4 text-white"
+        >
+          See collection
+        </button>
+        <a
+          href="index.html"
+          class="rounded bg-gray-100 hover:bg-gray-500 py-2 px-4 text-black"
+          >Back to home</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full flex justify-center">
+    <div
+      id="openseaItems"
+      class="w-1/2 grid lg:grid-cols-4 md:grid-cols-2 gap-4"
+    >
+      <!-- Opensea items go here -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="animate.js"></script>
+</body>

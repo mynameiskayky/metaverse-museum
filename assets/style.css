@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800;900&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@400;500;700;800&display=swap');
+
+:root {
+  --font-tittle: 'Caudex', serif;
+  --font-text: 'Catamaran', sans-serif;
+  --font-ticket: 'Orbitron', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  background: radial-gradient(98.26% 251.56% at 13.33% 18.61%, #343131 0%, #1D1919 100%) no-repeat fixed center top;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  height: 10vh;
+  max-width: 1600px;
+  padding: 0 30px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.menu-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.menu-options li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+.menu-options li a {
+  color: #fff;
+  font-family: var(--font-text);
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: .3s;
+  padding: 10px 20px;
+}
+
+.menu-options li a:hover {
+  color: #BCBCBC;
+}
+
+/* lobby */
+
+.lobby {
+  display: flex;
+  max-width: 1600px;
+  height: 70vh;
+  padding: 0 30px;
+  margin: 0 auto;
+  align-items: center;
+
+}
+
+.players {
+  width: 100%;
+  max-width: 250px;
+}
+
+.user {
+  font-family: var(--font-text);
+  color: #505050;
+  margin-bottom: 2.5rem;
+}
+
+.position-user {
+  font-size: 1.75rem;
+  position: relative;
+  font-weight: 800;
+}
+
+.position-user::after {
+  content: '';
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(to right, rgba(76, 76, 76, 1), rgba(76, 76, 76, 0));
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+
+.nft-name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0px 0 -10px;
+
+}
+
+.valuetion-nft {
+  font-family: Catamaran;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.first h2{
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.first .position-user::after {
+  width: 250px;
+  height: 2px;
+  background: linear-gradient(to right, rgba(225, 225, 225, 1), rgba(225, 225, 225, 0));
+}
+
+.first p {
+  color: #bcbcbc;
+}
+
+.presetation-nft {
+  width: 100%;
+  min-width: 560px;
+  position: relative;
+  right: 60px;
+}
+
+.present-ticket {
+  width: 100%;
+  max-width: 700px;
+}
+
+.present-ticket h1 {
+  font-family: var(--font-tittle);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.005em;
+  margin-bottom: 1rem;
+
+}
+
+.present-ticket p {
+  font-family: var(--font-text);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #BCBCBC;
+}
+
+.btn-options a, .purchase-data a {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+
+  font-family: var(--font-ticket);
+  font-size: 1rem;
+  font-weight: 500;
+
+  display: flex;
+  width: 100%;
+  height: 60px;
+  max-width: 250px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+
+  transition: 0.3s;
+
+}
+
+.btn-options a:hover, .purchase-data a:hover, #btn-random:hover {
+  border: 2px solid #fff;
+  opacity: 0.8;
+}
+
+.purchase-data a {
+  padding: 0 20px;
+}
+
+.present-ticket img {
+  width: 24px;
+  margin: 0 1rem 0 0;
+}
+
+.btn-options {
+  display: flex;
+  gap: 0 25px;
+  margin-top: 25px;
+}
+
+
+#btn-random {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* confirmar compra do ingresso */
+
+footer {
+  background: linear-gradient(270deg, rgba(66, 66, 66, 0.49) 0%, rgba(66, 66, 66, 0.4753) 76.04%, rgba(66, 66, 66, 0) 100%);
+  backdrop-filter: blur(47.2917px);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+  z-index: 999;
+  padding: 0 20px;
+}
+
+.footer-data {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  height: 20vh;
+  position: relative;
+  display: grid;
+}
+
+.footer-data h2 {
+  font-family: var(--font-tittle);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  display: block;
+  padding-top: 40px;
+  position: absolute;
+}
+
+.purchase-data {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.purchase-data li a {
+  color: #000;
+  background-color: #fff;
+
+}
+
+.token {
+  display: grid;
+  place-content: center;
+}
+
+.data-tittle {
+  font-family: Orbitron;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.data-text {
+  font-family: Catamaran;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #BCBCBC;
+}
+
+/* resposivo */
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 90%;
+  }
+} 
